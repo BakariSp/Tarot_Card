@@ -26,5 +26,6 @@ This diagram presents the workflow of the Tarot Quote Analyzer App, illustrating
 - The creator intends to deploy the app to Firebase, acknowledging that the back-end requires further configuration.
 - Continued development and enhancement of the app are planned for the summer period.
 
-## [Getting Started](https://github.com/BakariSp/Tarot_Card/blob/main/readme.md)
+## Getting Started
+[click here](https://github.com/BakariSp/Tarot_Card/blob/main/readme.md)
 
