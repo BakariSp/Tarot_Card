@@ -1,12 +1,3 @@
-# Installation
-To run this application:
-
-## Ensure you have Node.js installed.
-Clone the repository and navigate into the project directory.
-Install dependencies with `npm install`.
-Start the application with `npm run dev`.
-Make sure to set up the necessary environment variables (NEXT_PUBLIC_REACT_APP_API_KEY_NINJAS and NEXT_PUBLIC_REACT_APP_OPENAI_API_KEY) to ensure API functionality.
-
 ## Main Functions
 
 ### Lucky Number and Tarot Card Fetching
@@ -24,6 +15,6 @@ Make sure to set up the necessary environment variables (NEXT_PUBLIC_REACT_APP_A
 1. Clone the repository and navigate to the project directory.
 2. Run `npm install` to install the necessary dependencies.
 3. Set the environment variables for API keys (`NEXT_PUBLIC_REACT_APP_API_KEY_NINJAS` and `NEXT_PUBLIC_REACT_APP_OPENAI_API_KEY`).
-4. Execute `npm start` to run the application.
+4. Execute `npm run dev` to run the application.
 
 This README focuses on the essential functionalities and setup instructions, providing users with a concise guide to start using the application immediately.
