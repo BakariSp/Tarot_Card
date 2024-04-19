@@ -23,8 +23,8 @@ const TarotCardMessage: FC<TarotCard> = ({ message, name, meaning_up }) => {
   const [getAnalysis, setGetAnalysis] = useState(false);
   const category = 'happiness';
   const api_url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
-  const api_key = process.env.REACT_APP_API_KEY_NINJAS; // Use the environment variable
-  const openai_api_key = process.env.REACT_APP_OPENAI_API_KEY; // Securely store and use your OpenAI API key
+  const api_key = process.env.NEXT_PUBLIC_REACT_APP_API_KEY_NINJAS; // Use the environment variable
+  const openai_api_key = process.env.NEXT_PUBLIC_REACT_APP_OPENAI_API_KEY; // Securely store and use your OpenAI API key
 
   const fetchQuote = async () => {
     setLoadingQuote(true);

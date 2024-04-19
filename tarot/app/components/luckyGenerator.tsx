@@ -37,7 +37,7 @@ export default function LuckyGenerator() {
       }
       setData(apiResponse.cards[0]);
     } catch (error) {
-      setError(error.message);
+      console.log(error);
     } finally {
       setLoading(false);
     }
