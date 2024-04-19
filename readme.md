@@ -42,7 +42,7 @@ To run this application:
 1. Ensure you have Node.js installed.
 2. Clone the repository and navigate into the project directory.
 3. Install dependencies with `npm install`.
-4. Start the application with `npm start`.
+4. Start the application with `npm run dev`.
 
 Make sure to set up the necessary environment variables (`NEXT_PUBLIC_REACT_APP_API_KEY_NINJAS` and `NEXT_PUBLIC_REACT_APP_OPENAI_API_KEY`) to ensure API functionality.
 
