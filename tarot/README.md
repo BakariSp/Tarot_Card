@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Installation
+To run this application:
 
-## Getting Started
+## Ensure you have Node.js installed.
+Clone the repository and navigate into the project directory.
+Install dependencies with `npm install`.
+Start the application with `npm run dev`.
+Make sure to set up the necessary environment variables (NEXT_PUBLIC_REACT_APP_API_KEY_NINJAS and NEXT_PUBLIC_REACT_APP_OPENAI_API_KEY) to ensure API functionality.
 
-First, run the development server:
+## Main Functions
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Lucky Number and Tarot Card Fetching
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Get Lucky Number:** Users can generate a random number by clicking the "Get Lucky!" button. This number is crucial for fetching a specific tarot card.
+- **Fetch Tarot Card:** Utilizes the generated number to make an API call to `https://tarotapi.dev/api/v1/cards/search?value=${num}` and retrieve a tarot card. The card's name and upright meaning are then displayed.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Quote Fetching and Tarot Card Analysis
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Fetch Quote:** After a tarot card is displayed, users can opt to fetch a quote by clicking the "Get Lucky Quote" button, which makes an API call to `https://api.api-ninjas.com/v1/quotes?category=happiness`.
+- **Tarot Card Analysis:** With a quote and a tarot card on display, users can request an analysis by clicking the "Analyze Tarot Card" button. This function uses the OpenAI API to analyze the significance of the tarot card in relation to the fetched quote.
 
-## Learn More
+## Installation and Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository and navigate to the project directory.
+2. Run `npm install` to install the necessary dependencies.
+3. Set the environment variables for API keys (`NEXT_PUBLIC_REACT_APP_API_KEY_NINJAS` and `NEXT_PUBLIC_REACT_APP_OPENAI_API_KEY`).
+4. Execute `npm start` to run the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This README focuses on the essential functionalities and setup instructions, providing users with a concise guide to start using the application immediately.
